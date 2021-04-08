@@ -18,3 +18,6 @@ def load():
     file = open("templates/text.txt","r")
     loaded_text = file.read()
     return render_template('index.html', loaded_text = loaded_text)
+
+if __name__ == '__main__':
+     app.run(host='0.0.0.0', port ='5150')
